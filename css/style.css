@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* Proměnné */
+/*Základ*/
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  color: #ff5d8f;
+  margin: none;
+}
+
+section {
+  padding: 0 15px;
+}
+
+/*Hlavička*/
+.menu {
+  background-color: #ff5d8f;
+  text-align: center;
+}
+
+.menu__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu__item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ff97b7;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fffcf9;
+}
+
+/*Sekce highlight*/
+.highlight {
+  background-color: #fffcf9;
+  padding: 15px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits__item {
+  align-items: center;
+  background-color: #ff97b7;
+  border-radius: 50%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/*button*/
+.button {
+  background-color: #ff5d8f;
+  padding: 15px;
+  width: 50%;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.button__action {
+  text-decoration: none;
+  color: #fffcf9;
+  font-weight: bold;
+}
+
+/*Patička*/
+.paticka {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

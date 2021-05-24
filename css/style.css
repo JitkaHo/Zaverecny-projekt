@@ -24,6 +24,7 @@ h2 {
 
 section {
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 /*Hlavička*/
@@ -31,20 +32,66 @@ section {
   background-color: #ff5d8f;
   text-align: center;
 }
-
+@media screen and (min-width: 500px) {
+  .menu {
+    display: flex;
+  }
+}
 .menu__list {
   list-style: none;
   padding-left: 0;
 }
-
+@media screen and (min-width: 500px) {
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 .menu__item {
-  padding: 15px 0;
+  padding: 15px 10px;
   border-bottom: 1px solid #ff97b7;
 }
-
+.menu__item:hover {
+  background-color: #ff97b7;
+}
+@media screen and (min-width: 500px) {
+  .menu__item {
+    border-bottom: none;
+  }
+}
 .menu__link {
   text-decoration: none;
   color: #fffcf9;
+  display: block;
+}
+
+/*Hero sekce hlavní banner*/
+@media screen and (min-width: 500px) {
+  .hero {
+    background-image: url(/images/cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    padding: 90px;
+  }
+}
+@media screen and (min-width: 500px) and (min-width: 500px) {
+  .hero__input {
+    padding-left: 50%;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .hero__input h1 {
+    color: #ff5d8f;
+  }
 }
 
 /*Sekce highlight*/
@@ -52,13 +99,27 @@ section {
   background-color: #fffcf9;
   padding: 15px;
 }
+.highlight h2 {
+  display: block;
+}
 
-.benefits {
+@media screen and (min-width: 500px) {
+  .benefits {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.benefits__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+@media screen and (min-width: 500px) {
+  .benefits__container {
+    flex-basis: 50%;
+  }
+}
 .benefits__item {
   align-items: center;
   background-color: #ff97b7;
@@ -79,8 +140,11 @@ section {
   border-radius: 5px;
   margin: auto;
   text-align: center;
+  margin-bottom: 30px;
 }
-
+.button:hover {
+  background-color: #ff97b7;
+}
 .button__action {
   text-decoration: none;
   color: #fffcf9;
@@ -89,5 +153,41 @@ section {
 
 /*Patička*/
 .paticka {
-  display: none;
+  background-color: #ff97b7;
+  text-align: center;
+}
+@media screen and (min-width: 500px) {
+  .paticka {
+    display: flex;
+  }
+}
+.paticka__list {
+  list-style: none;
+  padding-left: 0;
+}
+@media screen and (min-width: 500px) {
+  .paticka__list {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.paticka__item {
+  padding: 15px 10px;
+  border-bottom: 1px solid #ff97b7;
+}
+.paticka__item:hover {
+  background-color: #ff5d8f;
+}
+@media screen and (min-width: 500px) {
+  .paticka__item {
+    border-bottom: none;
+  }
+}
+.paticka__link {
+  text-decoration: none;
+  color: #fffcf9;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

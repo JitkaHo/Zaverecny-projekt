@@ -25,6 +25,7 @@ h2 {
 section {
   padding: 0 15px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 /*Hlavička*/
@@ -48,6 +49,11 @@ section {
     margin-left: 25%;
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .menu__list {
+    max-width: 1100px;
   }
 }
 .menu__item {
@@ -82,15 +88,48 @@ section {
     padding: 90px;
   }
 }
-@media screen and (min-width: 500px) and (min-width: 500px) {
+.hero__input {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.hero__input h1 {
+  color: #ff5d8f;
+}
+@media screen and (min-width: 500px) {
   .hero__input {
     padding-left: 50%;
     padding-right: 30px;
   }
 }
+
+/*Sekce info o facejóze*/
 @media screen and (min-width: 500px) {
-  .hero__input h1 {
-    color: #ff5d8f;
+  .introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .introduction {
+    max-width: 1100px;
+    margin: 30px auto;
+  }
+}
+.introduction__photo {
+  width: 100%;
+  border-radius: 5px;
+}
+@media screen and (min-width: 500px) {
+  .introduction__photo {
+    flex-basis: calc(50% - 30px);
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .introduction__info {
+    flex-basis: 50%;
+    margin-left: 30px;
   }
 }
 
@@ -102,12 +141,24 @@ section {
 .highlight h2 {
   display: block;
 }
+@media screen and (min-width: 1100px) {
+  .highlight h2 {
+    max-width: 1100px;
+    margin: 30px auto;
+  }
+}
 
 @media screen and (min-width: 500px) {
   .benefits {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .benefits {
+    max-width: 1100px;
+    margin: 30px auto;
   }
 }
 .benefits__container {
@@ -118,6 +169,11 @@ section {
 @media screen and (min-width: 500px) {
   .benefits__container {
     flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .benefits__container {
+    flex-basis: calc(100% / 3);
   }
 }
 .benefits__item {
@@ -136,7 +192,7 @@ section {
 .button {
   background-color: #ff5d8f;
   padding: 15px;
-  width: 50%;
+  width: 150px;
   border-radius: 5px;
   margin: auto;
   text-align: center;
@@ -149,6 +205,14 @@ section {
   text-decoration: none;
   color: #fffcf9;
   font-weight: bold;
+}
+
+/*Reference*/
+@media screen and (min-width: 1100px) {
+  .reference {
+    max-width: 1100px;
+    margin: 30px auto;
+  }
 }
 
 /*Patička*/

@@ -77,7 +77,7 @@ section {
 /*Hero sekce hlavní banner*/
 @media screen and (min-width: 500px) {
   .hero {
-    background-image: url(/images/cover.png);
+    background-image: url(/images/cover-small.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,0 +1,25 @@
+{
+  "name": "zaverecny-projekt",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000Z\u0000a\u0000v\u0000e\u0000r\u0000e\u0000c\u0000n\u0000y\u0000-\u0000p\u0000r\u0000o\u0000j\u0000e\u0000k\u0000t\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JitkaHo/Zaverecny-projekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JitkaHo/Zaverecny-projekt/issues"
+  },
+  "homepage": "https://github.com/JitkaHo/Zaverecny-projekt#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

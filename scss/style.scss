@@ -208,6 +208,21 @@ section {
     line-height: 30px;
   }
 }
+
+/*stránka Kontakt*/
+.contact {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__image {
+    max-width: 30%;
+    background-color: $secondary;
+    border-radius: 50%;
+  }
+}
+
 /*Patička*/
 
 .paticka {

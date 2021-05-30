@@ -225,6 +225,18 @@ section {
   line-height: 30px;
 }
 
+/*stránka Kontakt*/
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact__image {
+  max-width: 30%;
+  background-color: #ff97b7;
+  border-radius: 50%;
+}
+
 /*Patička*/
 .paticka {
   background-color: #ff97b7;

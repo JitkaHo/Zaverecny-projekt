@@ -3,41 +3,53 @@ layout: moje-sablona.njk
 title: Margarita Faceyoga
 ---
 
-<h1>O mně</h1>
-<!--Moje cesta k facejóze-->
-<section>
-  <img src="/images/kiss-small.png" alt="Margarita O mně" />
-  <div>
-    <h2>Moje cesta k facejóze</h2>
-    <p>
-      O face jógu jsem se zajímám od roku 2019. Na Instagramu a Youtube jsem
-      začala sledovat videa. Pak si koupila knížku a pak se hned přihlásila na
-      kurz. Nejdříve jen jako klient, zájemce. Absolvovala jsem kurz až v Hradci
-      Králové. Poté následoval už lektorský kurz v Olomouci.
-    </p>
-    <p>
-      Obličejová jóga mě hned uchvátila. Snažím se neustále vypadat svěží a
-      mladistvě a face jóga je, co se týká obličeje úžasná. Dříve jsem uvažovala
-      nad tím, jaké kosmetické procedury podstoupím, jestli chemický peeling
-      nebo laserovou rejuvenaci a teď už nemusím. Stačí pár minut denně cvičit
-      obličejové svaly a každý večer si dopřát masáž celého obličeje, krku a
-      dekoltu.
-    </p>
-  </div>
-</section>
-<!--Absolvované kurzy-->
-<section>
-  <img src="/images/cover-small.png" alt="Certifikát o abslovovaném kurzu" />
-  <h2>Absolvované kurzy</h2>
-  <ul>
-    <li>
-      Základní kurz obličejové jógy v Hradci Králové pod vedením Marcely
-      Švadlenkové
-    </li>
-    <li>
-      Instruktorský kurz obličejové gymnastiky pro začátečníky, mírně pokročilé
-      a pokročilé u Face Yoga Academy Selavis v Olomouci pod vedením Světlany
-      Mihulové a Mgr. Jiřiny Mihulové, MBA
-    </li>
-  </ul>
-</section>
+<main>
+  <h1 class="heading">O mně</h1>
+  <!--Moje cesta k facejóze-->
+  <section class="card">
+    <img
+      class="card__image"
+      src="/images/profile-picture.png"
+      alt="Margarita O mně"
+    />
+    <div class="card__info">
+      <h2>Moje cesta k facejóze</h2>
+      <p class="card__text">
+        O face jógu jsem se zajímám od roku 2019. Na Instagramu a Youtube jsem
+        začala sledovat videa. Pak si koupila knížku a pak se hned přihlásila na
+        kurz. Nejdříve jen jako klient, zájemce. Absolvovala jsem kurz až v
+        Hradci Králové. Poté následoval už lektorský kurz v Olomouci.
+      </p>
+      <p class="card__text">
+        Obličejová jóga mě hned uchvátila. Snažím se neustále vypadat svěží a
+        mladistvě a face jóga je, co se týká obličeje úžasná. Dříve jsem
+        uvažovala nad tím, jaké kosmetické procedury podstoupím, jestli chemický
+        peeling nebo laserovou rejuvenaci a teď už nemusím. Stačí pár minut
+        denně cvičit obličejové svaly a každý večer si dopřát masáž celého
+        obličeje, krku a dekoltu.
+      </p>
+    </div>
+  </section>
+  <!--Absolvované kurzy-->
+  <section class="card">
+    <img
+      class="card__photo--reverse"
+      src="/images/cover-small.png"
+      alt="Certifikát o abslovovaném kurzu"
+    />
+    <div class="card__info--reverse">
+      <h2>Absolvované kurzy</h2>
+      <ul class="card__text">
+        <li>
+          Základní kurz obličejové jógy v Hradci Králové pod vedením Marcely
+          Švadlenkové
+        </li>
+        <li>
+          Instruktorský kurz obličejové gymnastiky pro začátečníky, mírně
+          pokročilé a pokročilé u Face Yoga Academy Selavis v Olomouci pod
+          vedením Světlany Mihulové a Mgr. Jiřiny Mihulové, MBA
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>

@@ -25,8 +25,15 @@ h2 {
   color: $primary;
   margin: none;
 }
-h1 {
-  margin-left: $spacer/2;
+
+.heading {
+  padding-left: $spacer/2;
+  font-weight: 700;
+  font-size: $spacer;
+  @media screen and (min-width: 500px) {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 section {
@@ -34,7 +41,12 @@ section {
   margin-bottom: $spacer;
   margin-top: $spacer;
 }
-
+.paragraph {
+  @media screen and (min-width: 1100px) {
+    max-width: 1100px;
+    margin: $spacer auto;
+  }
+}
 /*Hlavička*/
 .menu {
   background-color: $primary;
@@ -90,13 +102,13 @@ section {
   &__input {
     margin-left: $spacer/2;
     margin-right: $spacer/2;
-    h1 {
-      color: $primary;
-    }
     @media screen and (min-width: 500px) {
       padding-left: 50%;
       padding-right: $spacer;
     }
+  }
+  &__heading {
+    color: $primary;
   }
 }
 
@@ -115,14 +127,39 @@ section {
     width: 100%;
     border-radius: 5px;
     @media screen and (min-width: 500px) {
-      flex-basis: calc(50% - 30px);
+      flex-basis: calc(50% - 40px);
       margin-right: $spacer;
     }
   }
+  &__photo--reverse {
+    width: 100%;
+    border-radius: 5px;
+    @media screen and (min-width: 500px) {
+      flex-basis: calc(50% - 40px);
+      margin-left: $spacer;
+      order: 2;
+    }
+  }
+  &__image {
+    border-radius: 50%;
+    width: 100%;
+    @media screen and (min-width: 500px) {
+      flex-basis: calc(50% - 40px);
+      margin-right: $spacer;
+    }
+  }
+
   &__info {
     @media screen and (min-width: 500px) {
-      flex-basis: 50%;
+      flex-basis: calc(50% - 40px);
       margin-left: $spacer;
+    }
+  }
+  &__info--reverse {
+    @media screen and (min-width: 500px) {
+      flex-basis: calc(50% - 40px);
+      margin-right: $spacer;
+      order: 1;
     }
   }
   &__text {

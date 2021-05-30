@@ -22,14 +22,29 @@ h2 {
   margin: none;
 }
 
-h1 {
-  margin-left: 20px;
+.heading {
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media screen and (min-width: 500px) {
+  .heading {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 section {
   padding: 0 20px;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+@media screen and (min-width: 1100px) {
+  .paragraph {
+    max-width: 1100px;
+    margin: 40px auto;
+  }
 }
 
 /*Hlavička*/
@@ -96,14 +111,14 @@ section {
   margin-left: 20px;
   margin-right: 20px;
 }
-.hero__input h1 {
-  color: #ff5d8f;
-}
 @media screen and (min-width: 500px) {
   .hero__input {
     padding-left: 50%;
     padding-right: 40px;
   }
+}
+.hero__heading {
+  color: #ff5d8f;
 }
 
 /*Sekce info o facejóze*/
@@ -126,14 +141,42 @@ section {
 }
 @media screen and (min-width: 500px) {
   .card__photo {
-    flex-basis: calc(50% - 30px);
+    flex-basis: calc(50% - 40px);
+    margin-right: 40px;
+  }
+}
+.card__photo--reverse {
+  width: 100%;
+  border-radius: 5px;
+}
+@media screen and (min-width: 500px) {
+  .card__photo--reverse {
+    flex-basis: calc(50% - 40px);
+    margin-left: 40px;
+    order: 2;
+  }
+}
+.card__image {
+  border-radius: 50%;
+  width: 100%;
+}
+@media screen and (min-width: 500px) {
+  .card__image {
+    flex-basis: calc(50% - 40px);
     margin-right: 40px;
   }
 }
 @media screen and (min-width: 500px) {
   .card__info {
-    flex-basis: 50%;
+    flex-basis: calc(50% - 40px);
     margin-left: 40px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .card__info--reverse {
+    flex-basis: calc(50% - 40px);
+    margin-right: 40px;
+    order: 1;
   }
 }
 .card__text {

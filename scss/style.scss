@@ -13,7 +13,7 @@ $primary: #ff5d8f;
 $secondary: #ff97b7;
 $contrast: #fffcf9;
 $font-base: "Nunito", sans-serif; //fonty
-$spacer: 30px;
+$spacer: 40px;
 
 /*Základ*/
 body {
@@ -24,6 +24,9 @@ body {
 h2 {
   color: $primary;
   margin: none;
+}
+h1 {
+  margin-left: $spacer/2;
 }
 
 section {
@@ -98,7 +101,7 @@ section {
 }
 
 /*Sekce info o facejóze*/
-.introduction {
+.card {
   @media screen and (min-width: 500px) {
     display: flex;
     justify-content: space-between;
@@ -121,6 +124,9 @@ section {
       flex-basis: 50%;
       margin-left: $spacer;
     }
+  }
+  &__text {
+    line-height: 30px;
   }
 }
 
@@ -197,6 +203,9 @@ section {
   @media screen and (min-width: 1100px) {
     max-width: 1100px;
     margin: $spacer auto;
+  }
+  &__text {
+    line-height: 30px;
   }
 }
 /*Patička*/

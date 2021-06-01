@@ -1,0 +1,24 @@
+@use 'variables';
+/*Hero sekce hlavní banner*/
+.hero {
+  @media screen and (min-width: 500px) {
+    background-image: url(/images/cover-small.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: min-content;
+    padding: variables.$spacer * 3;
+  }
+  &__input {
+    margin-left: variables.$spacer/2;
+    margin-right: variables.$spacer/2;
+    @media screen and (min-width: 500px) {
+      padding-left: 50%;
+      padding-right: variables.$spacer;
+    }
+  }
+  &__heading {
+    color: variables.$primary;
+  }
+}

@@ -1,0 +1,36 @@
+@use 'variables';
+/*Patička*/
+
+.paticka {
+  background-color: variables.$secondary;
+  text-align: center;
+  @media screen and (min-width: 500px) {
+    display: flex;
+  }
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    @media screen and (min-width: 500px) {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  &__item {
+    padding: variables.$spacer/2 10px;
+    border-bottom: 1px solid variables.$secondary;
+    &:hover {
+      background-color: variables.$primary;
+    }
+    @media screen and (min-width: 500px) {
+      border-bottom: none;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: variables.$contrast;
+    display: block;
+  }
+}

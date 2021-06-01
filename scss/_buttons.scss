@@ -1,0 +1,22 @@
+@use 'variables';
+/*button*/
+.button {
+  background-color: variables.$primary;
+  padding: variables.$spacer/2;
+  width: 150px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: variables.$spacer;
+  &:hover {
+    background-color: variables.$secondary;
+  }
+  @media screen and (min-width: 500px) {
+  }
+
+  &__action {
+    text-decoration: none;
+    color: variables.$contrast;
+    font-weight: bold;
+  }
+}

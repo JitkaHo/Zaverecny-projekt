@@ -1,0 +1,32 @@
+@use 'variables';
+/*stránka Kontakt*/
+
+.contact {
+  @media screen and (min-width: 1100px) {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1100px) {
+      flex-direction: row;
+    }
+  }
+  &__image {
+    max-width: 100px;
+    background-color: variables.$primary;
+    border-radius: 50%;
+    fill: variables.$contrast;
+    padding: 10px;
+    margin: variables.$spacer auto;
+  }
+  &__action {
+    margin: auto;
+    @media screen and (min-width: 1100px) {
+      margin-left: variables.$spacer;
+    }
+  }
+}

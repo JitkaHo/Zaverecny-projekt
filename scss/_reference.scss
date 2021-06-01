@@ -1,0 +1,11 @@
+@use 'variables';
+/*Reference*/
+.reference {
+  @media screen and (min-width: 1100px) {
+    max-width: 1100px;
+    margin: variables.$spacer auto;
+  }
+  &__text {
+    line-height: 30px;
+  }
+}

@@ -62,7 +62,7 @@ section {
     @media screen and (min-width: 500px) {
       display: flex;
       justify-content: space-between;
-      margin-left: 25%;
+      margin: auto;
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -121,7 +121,7 @@ section {
   }
   @media screen and (min-width: 1100px) {
     max-width: 1100px;
-    margin: $spacer auto;
+    margin: $spacer * 2 auto;
   }
   &__photo {
     width: 100%;
@@ -247,16 +247,34 @@ section {
 }
 
 /*stránka Kontakt*/
+
 .contact {
+  @media screen and (min-width: 1100px) {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
   &__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    @media screen and (min-width: 1100px) {
+      flex-direction: row;
+    }
   }
   &__image {
-    max-width: 30%;
-    background-color: $secondary;
+    max-width: 100px;
+    background-color: $primary;
     border-radius: 50%;
+    fill: $contrast;
+    padding: 10px;
+    margin: $spacer auto;
+  }
+  &__action {
+    margin: auto;
+    @media screen and (min-width: 1100px) {
+      margin-left: $spacer;
+    }
   }
 }
 
@@ -265,7 +283,6 @@ section {
 .paticka {
   background-color: $secondary;
   text-align: center;
-
   @media screen and (min-width: 500px) {
     display: flex;
   }
@@ -290,7 +307,6 @@ section {
       border-bottom: none;
     }
   }
-
   &__link {
     text-decoration: none;
     color: $contrast;

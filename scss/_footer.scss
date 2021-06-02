@@ -19,7 +19,6 @@
     }
   }
   &__item {
-    padding: variables.$spacer/2 10px;
     border-bottom: 1px solid variables.$secondary;
     &:hover {
       background-color: variables.$primary;
@@ -29,6 +28,7 @@
     }
   }
   &__link {
+    padding: variables.$spacer/2 10px;
     text-decoration: none;
     color: variables.$contrast;
     display: block;

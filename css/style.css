@@ -76,7 +76,6 @@ section {
   }
 }
 .menu__item {
-  padding: 20px 10px;
   border-bottom: 1px solid #ff97b7;
 }
 .menu__item:hover {
@@ -88,6 +87,7 @@ section {
   }
 }
 .menu__link {
+  padding: 20px 10px;
   text-decoration: none;
   color: #fffcf9;
   display: block;
@@ -145,7 +145,6 @@ section {
   }
 }
 .paticka__item {
-  padding: 20px 10px;
   border-bottom: 1px solid #ff97b7;
 }
 .paticka__item:hover {
@@ -157,6 +156,7 @@ section {
   }
 }
 .paticka__link {
+  padding: 20px 10px;
   text-decoration: none;
   color: #fffcf9;
   display: block;
